@@ -3,7 +3,7 @@ package com.ukma.edu.spring.boot.starter.cloudinary.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.bind.DefaultValue;
 
-@ConfigurationProperties(prefix = "spring.boot.cloudinary")
+@ConfigurationProperties("spring.cloudinary")
 public record CloudinaryProperties(
     @DefaultValue("cloud")
     String cloudName,
